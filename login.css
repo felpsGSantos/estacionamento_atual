@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ececec;
+}
+.container{
+    position: relative;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container span{
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background: #2c4766;
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: animateBlink 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+}
+@keyframes animateBlink {
+    0% {
+        background: #0ef;
+    }
+     25%{
+        background: #2c4766;
+     }
+}
+.login-box{
+    position: absolute;
+    width: 400px;
+    /*background: #ff0000;*/
+}
+.login-box form{
+    width: 100%;
+    padding:  0 50px;
+}
+h2{
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin: 25px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #2c4766;
+    outline: none;
+    border-radius: 40px;
+    transition: .5s ease;
+    font-size: 1em;
+    color: #000000;
+    padding:  0 20px;
+}
+.input-box input:focus,
+.input-box input:valid{
+    border-color: #0ef;
+}
+.input-box label {
+    position: absolute;
+    top:50%;
+    left:20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color:#000000;
+    pointer-events: none;
+    transition:  .5s ease;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:1px;
+    font-size: .8em;
+    background: #1f293a;
+    padding: 0 6px;
+    color:#0ef;
+
+}
+.forgot-pass{
+    margin: -15px 0 10px;
+    text-align: center;
+}
+.forgot-pass a{
+    font-size: .85em;
+    color: #000000;
+    text-decoration: none;
+}
+.forgot-pass a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #F2DA5E;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000000;
+    font-weight: 600;
+}
+.signup-link{
+    margin: 20px 0 10px;
+    text-align: center;
+}
+.signup-link a{
+    font-size: 1em;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight:  600;
+}
+.signup-link a:hover{
+    text-decoration: underline;
+
+}
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor:pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor:pointer;
+    user-select: none;
+    margin: 0 0 1.25rem 0;
+}
+
+.checkbox-container input:checked ~.checkmark{
+        background-color: #4655D3;
+        border: 1px solid #4655D3;
+}
+.checkmark{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border:1px solid #c4c4c4;
+    border-radius: 2px;
+    top:4px;
+    left:0px
+}
+.checkmark:after{
+        content: "";
+        position: absolute;
+        display: none;
+}
+.checkbox-container input:checked~.checkmark::after{
+    display: block;
+}
+.checkbox-container input:checked:after{
+    border:solid white;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left:8px;
+    top:4px;
+    transform: rotate(45deg);
+}

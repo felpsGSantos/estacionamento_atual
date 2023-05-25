@@ -1,0 +1,159 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+color: rgb(0, 0, 0);
+margin-top: 20%;
+background-color: rgb(224, 224, 224);
+color: var(--text-color);
+border: 0% solid transparent;
+
+
+}
+
+
+
+
+
+ 
+.dash-content .activity .activity-data{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.activity .activity-data{
+    color: rgb(0, 0, 0);
+    display: flex;
+}
+.activity-data .data{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+
+    
+
+}
+    
+
+
+.activity-data .data-title1:hover{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    color: var(--text-color);
+    border-image-source:url(images/quadrado_318-149055.avif) ;
+    border-image-slice: 33%;
+    border-image-repeat: round;
+    border-image-width: 30px;
+}
+
+.activity-data .data .data-list:hover {
+    font-size: 18px;
+    font-weight: 180;
+    margin-top: 20px;
+    white-space: nowrap;
+    color: var(--text-color);
+    border: 4px solid transparent;
+    border-image-source: url(images/quadrado_318-149055.avif)  ;
+    border-image-slice: 33%;
+    border-image-repeat: round;
+    border-image-width: 30px;
+}
+
+
+
+.titulo-vagas {
+    margin-left: 450px;
+    position: absolute;
+    top: 150px;
+    left: 290px;
+    text-align: center;
+       font-size: 20px;
+       color: var(--text-color);
+       border: 4px solid transparent;
+       
+}
+
+
+
+
+
+.carro  {
+    border: 1px solid transparent;
+    border-image-source: url(images/quadrado_318-149055.avif)  ;
+    border-image-slice: 33%;
+    border-image-repeat: round;
+    border-image-width: 30px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+   
+
+    
+
+}
+
+
+
+
+.moto {
+    border: 4px solid transparent;
+    border-image-source: url(images/quadrado_318-149055.avif)  ;
+    border-image-slice: 33%;
+    border-image-repeat: round;
+    border-image-width: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+
+
+}
+
+
+.caminhao {
+    border: 4px solid transparent;
+    border-image-source: url(images/quadrado_318-149055.avif);
+    border-image-slice: 33%;
+    border-image-repeat: round;
+    border-image-width: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    
+
+}
+
+
+.containerMoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 5px;
+}
+
+
+.containerCarros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 5px;
+}
+.containerCaminhao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 5px;
+}
+
